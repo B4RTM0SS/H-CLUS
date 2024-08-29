@@ -1,6 +1,7 @@
 # H-CLUS
 
 ---
+
 ## INDICE
 
 
@@ -17,6 +18,8 @@
 
     - [Server](#guida-server)
     - [Client](#guida-client)
+
++ [Casi d'uso](#test)
 
 ---
 
@@ -172,3 +175,137 @@ Inserire il nome del file nel quale si desidera salvare il dendrogramma appena g
 
 Premere il tasto "Invio" per confermare.
 </div>
+
+---
+
+<h2 id="test">Casi d'uso</h2>
+
+<h3>Server</h3>
+
+- [Credenziali corrette](#s1)
+- [Nome utente errato](#s2)
+- [Password errata](#s3)
+- [Credenziali nulle](#s4)
+- [Porta disponibile](#s5)
+- [Porta non disponibile](#s6)
+- [Porta non valida](#s7)
+
+<h3>Client</h3>
+
+- [Indirizzo IP e porta corretti](#c1)
+- [Indirizzo IP non disponibile](#c2)
+- [Formato indirizzo IP errato](#c3)
+- [IP e porta nulli](#c4)
+- [Numero porta errato](#c5)
+- [Nome tabella database corretto](#c6)
+- [Nome tabella database errato](#c7)
+- [Opzione menu corretta (1)](#c8)
+- [Nome file caricamento corretto](#c9)
+- [Nome file caricamento errato](#c10)
+- [Opzione menu corretta (2)](#c11)
+- [Profondità dendrogramma valida](#c12)
+- [Profondità dendrogramma negativa](#c13)
+- [Profondità dendrogramma non valida](#c14)
+- [Opzione menu distanza non valida](#c15)
+- [Nome file salvataggio corretto](#c16)
+- [Opzione menu non valida](#c17)
+
+---
+
+<h4 id="s1">Credenziali corrette</h4>
+
+<img src="./image/server/correctCredentials.png">
+
+<h4 id="s2">Nome utente errato</h4>
+
+<img src="./image/server/wrongUsername.png">
+
+<h4 id="s3">Password errata</h4>
+
+<img src="./image/server/wrongPassword.png">
+
+<h4 id="s4">Credenziali nulle</h4>
+
+<img src="./image/server/nullCredentials.png">
+
+<h4 id="s5">Porta disponibile</h4>
+
+<img src="./image/server/availablePort.png">
+
+<h4 id="s6">Porta non disponibile</h4>
+
+<img src="./image/server/unavailablePort.png">
+
+<h4 id="s7">Porta non valida</h4>
+
+<img src="./image/server/invalidPort.png">
+
+---
+
+<h4 id="c1">Indirizzo IP e porta corretti</h4>
+
+<img src="./image/client/correctAddress.png">
+
+<h4 id="c2">Indirizzo IP non disponibile</h4>
+
+<img src="./image/client/wrongAddress.png">
+
+<h4 id="c3">Formato indirizzo IP errato</h4>
+
+<img src="./image/client/wrongAddressFormat.png">
+
+<h4 id="c4">IP e porta nulli</h4>
+
+<img src="./image/client/nullIPandPort.png">
+
+<h4 id="c5">Numero porta errato</h4>
+
+<img src="./image/client/wrongPort.png">
+
+<h4 id="c6">Nome tabella database corretto</h4>
+
+<img src="./image/client/correctTableName.png">
+
+<h4 id="c7">Nome tabella database errato</h4>
+
+<img src="./image/client/wrongTableName.png">
+
+<h4 id="c8">Opzione menu corretta (1)</h4>
+
+<img src="./image/client/correctOption1.png">
+
+<h4 id="c9">Nome file caricamento corretto</h4>
+
+<img src="./image/client/correctFileName.png">
+
+<h4 id="c10">Nome file caricamento errato</h4>
+
+<img src="./image/client/wrongFileName.png">
+
+<h4 id="c11">Opzione menu corretta (2)</h4>
+
+<img src="./image/client/correctOption2.png">
+
+<h4 id="c12">Profondità dendrogramma valida</h4>
+
+<img src="./image/client/validDendrogramDepth.png">
+
+<h4 id="c13">Profondità dendrogramma negativa</h4>
+
+<img src="./image/client/negativeDendrogramDepth.png">
+
+<h4 id="c14">Profondità dendrogramma non valida</h4>
+
+<img src="./image/client/invalidDendrogramDepth.png">
+
+<h4 id="c15">Opzione menu distanza non valida</h4>
+
+<img src="./image/client/wrongDistanceOption.png">
+
+<h4 id="c16">Nome file salvataggio corretto</h4>
+
+<img src="./image/client/correctSaveFileName.png">
+
+<h4 id="c17">Opzione menu non valida</h4>
+
+<img src="./image/client/wrongMenuOption.png">
