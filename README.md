@@ -23,9 +23,11 @@
 <h2 id="diagramma">Diagramma delle classi</h2>
 
 <h3 id="diagramma-server">Server</h3>
+
 [ <img src="image/serverUML.png"> ](./image/serverUML.png)
 
 <h3 id="diagramma-client">Client</h3>
+
 [ <img src="image/clientUML.png"> ](./image/clientUML.png)
 
 
