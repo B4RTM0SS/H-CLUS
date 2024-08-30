@@ -65,7 +65,7 @@ Per installare il software H-CLUS, segui questi passaggi:
 <h2 id="utente">Guida utente</h2>
 
 <h3 id="guida-server">Server</h3>
-1. Nella cartella principale del progetto, trova il file `Server.bat` ed eseguilo con un doppio clic, come di seguito 
+1. Nella cartella principale del progetto, trova il file `server.bat` ed eseguilo con un doppio clic, come di seguito 
 mostrato.
 <img src="image/clic.gif">  
   In alternativa:
@@ -73,7 +73,7 @@ mostrato.
    <img src="image/cmd.png">
    + usa il comando `cd` seguito dal percorso della directory del progetto  
      <img src="image/cd.png">
-   + esegui il file `Server.bat`  
+   + esegui il file `server.bat`  
    <img src="image/bat.png">  
 
 2. Dopo aver avviato il programma, inserisci le informazioni richieste riguardanti il database  
@@ -90,9 +90,9 @@ mostrato.
 
 
 <h3 id="guida-client">Client</h3>
-Eseguire il file `Client.bat` presente nella cartella principale del progetto.
+Eseguire il file `client.bat` presente nella cartella principale del progetto.
 Per eseguirlo è possibile effettuare doppio clic su di esso o, in alternativa, aprire il terminale nella directory del 
-progetto e digitare `Client.bat`, premendo infine il tasto "Invio". 
+progetto e digitare `client.bat`, premendo infine il tasto "Invio". 
  
 Attendere che il programma compili il codice sorgente.  
 Una volta terminata l'inizializzazione, inserire l'indirizzo IP del server a cui si desidera collegarsi.
