@@ -84,12 +84,12 @@ Per installare il software H-CLUS, segui questi passaggi:
 mostrato.
 <img src="image/clic.gif">  
   In alternativa:
-   + apri il prompt dei comandi
-     <img src="image/cmd.png">
+   + apri il prompt dei comandi  
+   <img src="image/cmd.png">
    + usa il comando `cd` seguito dal percorso della directory del progetto  
      <img src="image/cd.png">
-   + esegui il file `Server.bat`
-     <img src="image/bat.png">  
+   + esegui il file `Server.bat`  
+   <img src="image/bat.png">  
 
 2. Dopo aver avviato il programma, inserisci le informazioni richieste riguardanti il database  
     <img src="image/database.png">
