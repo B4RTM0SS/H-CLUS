@@ -4,43 +4,29 @@
 
 ## INDICE
 
+1. [Introduzione](#introduzione)
 
-+ [Diagramma delle classi](#diagramma)
+2. [Guida di installazione](#installazione)
 
-  - [Server](#diagramma-server)
-  - [Client](#diagramma-client)
+3. [Guida utente](#utente)
 
-+ [JavaDoc](#javadoc)
+   4.1 [Server](#guida-server)  
+   4.2 [Client](#guida-client)
 
-+ [Guida di installazione](#installazione)
+4. [Casi d'uso](#test)
+5. [JavaDoc](#javadoc)
+5. [Diagramma delle classi](#diagramma)
 
-+ [Guida utente](#utente)
-
-    - [Server](#guida-server)
-    - [Client](#guida-client)
-
-+ [Casi d'uso](#test)
-
----
-
-<h2 id="diagramma">Diagramma delle classi</h2>
-
-<h3 id="diagramma-server">Server</h3>
-
-[ <img src="image/serverUML.png"> ](./image/serverUML.png)
-
-<h3 id="diagramma-client">Client</h3>
-
-[ <img src="image/clientUML.png"> ](./image/clientUML.png)
-
+   1.1 [Server](#diagramma-server)  
+   1.2 [Client](#diagramma-client)
 
 ---
 
-<h2 id="javadoc">JavaDoc</h2>
+<h2 id="introduzione">Introduzione</h2>
 
-- [JavaDoc Server](./Server/javadoc/index.html)
-- [JavaDoc Client](./Client/javadoc/index.html)
-
+“H-CLUS” è un sistema client-server che include funzionalità di data mining per la scoperta di un dendrogramma di
+cluster di dati con algoritmo di clustering agglomerativo e consente di usufruire del servizio di scoperta remoto, 
+permettendo di visualizzare il dendrogramma scoperto.
 
 ---
 
@@ -74,7 +60,6 @@ Per installare il software H-CLUS, segui questi passaggi:
    3. Digita java --version e premi "Invio".
       Se l'installazione è avvenuta correttamente, verrà visualizzata la versione di Java installata.
 
-
 ---
 
 <h2 id="utente">Guida utente</h2>
@@ -94,8 +79,8 @@ mostrato.
 2. Dopo aver avviato il programma, inserisci le informazioni richieste riguardanti il database  
     <img src="image/database.png">
 3. Se la connessione al database è avvenuta con successo, ti sarà richiesto di specificare il numero di porta su cui 
-   avviare il server
-    <img src="image/port.png">
+   avviare il server  
+   <img src="image/port.png">
 4. Inserito il numero di porta su cui avviare il servzio, verrà compilato il codice sorgente del programma: in caso di 
  successo, il server verrà avviato, con il servizio attivo sulla porta specificata al punto precedente  
     <img src="image/server.png">
@@ -214,98 +199,218 @@ Premere il tasto "Invio" per confermare.
 
 <h4 id="s1">Credenziali corrette</h4>
 
+Comportamento del programma nel caso in cui vengano inserite delle credenziali d'accesso per il server mysql errate.
+
 <img src="./image/server/correctCredentials.png">
+
+
+
+Caso in cui un vengano inserite credenziali corrette per l'accesso al servizio mysql.
 
 <h4 id="s2">Nome utente errato</h4>
 
 <img src="./image/server/wrongUsername.png">
 
+
+
 <h4 id="s3">Password errata</h4>
+
+Comportamento nel caso in cui venga inserita una password errata per l'accesso al servizio mysql.
 
 <img src="./image/server/wrongPassword.png">
 
+
+
 <h4 id="s4">Credenziali nulle</h4>
+
+Comportamento del programma nel caso non vengano inserite delle credenziali d'accesso.
 
 <img src="./image/server/nullCredentials.png">
 
+
+
 <h4 id="s5">Porta disponibile</h4>
+
+Caso in cui venga inserito un numero di porta disponibile per il server.
 
 <img src="./image/server/availablePort.png">
 
+
+
 <h4 id="s6">Porta non disponibile</h4>
+
+Comportamento del programma nel caso in cui sia stata inserito un numero di porta già utilizzato da un altro servizio
+e pertanto non disponibile.
 
 <img src="./image/server/unavailablePort.png">
 
+
+
 <h4 id="s7">Porta non valida</h4>
+
+Comportamento del programma nel caso il numero di porta inserito sia riservato per il sistema e dunque invalido.
 
 <img src="./image/server/invalidPort.png">
 
----
+
+
+
+
+
 
 <h4 id="c1">Indirizzo IP e porta corretti</h4>
 
+Caso in cui venga inserito un indirizzo ed una porta corretti per il collegamento al server.
+
 <img src="./image/client/correctAddress.png">
+
+
 
 <h4 id="c2">Indirizzo IP non disponibile</h4>
 
+Comportamento nel caso in cui l'indirizzo inserito non è disponibile a ricevere richieste sulla porta specificata.
+
 <img src="./image/client/wrongAddress.png">
+
+
 
 <h4 id="c3">Formato indirizzo IP errato</h4>
 
+Comportamento nel caso in cui sia stato inserito un indirizzo IP nel formato errato.
+
 <img src="./image/client/wrongAddressFormat.png">
+
+
 
 <h4 id="c4">IP e porta nulli</h4>
 
+Comportamento del programma nel caso non vengano immessi valori nei campi IP e Port per la connessione.
+
 <img src="./image/client/nullIPandPort.png">
+
+
 
 <h4 id="c5">Numero porta errato</h4>
 
+Comportamento nel caso in cui venga specificato un numero di porta non corrispondente al servizio richiesto.
+
 <img src="./image/client/wrongPort.png">
+
+
 
 <h4 id="c6">Nome tabella database corretto</h4>
 
+Caso in cui venga inserito il nome di una tabella presente nel database MapDb.
+
 <img src="./image/client/correctTableName.png">
+
+
 
 <h4 id="c7">Nome tabella database errato</h4>
 
+Comportamento nel caso in cui il nome della tabella specificato non sia presente nel database MapDb.
+
 <img src="./image/client/wrongTableName.png">
+
+
 
 <h4 id="c8">Opzione menu corretta (1)</h4>
 
+Caso in cui venga scelta l'opzione 1 nel menu di selezione scelta.
+
 <img src="./image/client/correctOption1.png">
+
+
 
 <h4 id="c9">Nome file caricamento corretto</h4>
 
+Caso in cui venga inserito il nome di un file, per il caricamento del dendrogramma, presente sul server.
+
 <img src="./image/client/correctFileName.png">
+
+
 
 <h4 id="c10">Nome file caricamento errato</h4>
 
+Comportamento nel caso venga inserito il nome di un file, per il caricamento del dendrogramma, non presente sul server
+a cui ci si è collegati.
+
 <img src="./image/client/wrongFileName.png">
+
+
 
 <h4 id="c11">Opzione menu corretta (2)</h4>
 
+Caso in cui venga scelta l'opzione 2 nel menu di selezione scelta.
+
 <img src="./image/client/correctOption2.png">
+
+
 
 <h4 id="c12">Profondità dendrogramma valida</h4>
 
+Caso in cui venga inserita una profondità del dendrogramma valida.
+
 <img src="./image/client/validDendrogramDepth.png">
+
+
 
 <h4 id="c13">Profondità dendrogramma negativa</h4>
 
+Comportamento nel caso in cui sia stata inserita una profondità del dendrogramma negativa.
+
 <img src="./image/client/negativeDendrogramDepth.png">
+
+
 
 <h4 id="c14">Profondità dendrogramma non valida</h4>
 
+Comportamento nel caso in cui sia stata immessa una profondità del dendrogramma non valida (che eccede il numero di 
+elementi presenti nella tabella del database precedentemente scelta)
+
 <img src="./image/client/invalidDendrogramDepth.png">
+
+
 
 <h4 id="c15">Opzione menu distanza non valida</h4>
 
+Comportamento nel caso in cui venga inserito un numero, per effettuare la scelta del metodo di aggragazione da 
+utilizzare, che non è presente tra le opzioni del menu. 
+
 <img src="./image/client/wrongDistanceOption.png">
+
+
 
 <h4 id="c16">Nome file salvataggio corretto</h4>
 
+Caso in cui venga inserito un nome corretto per il file di salvataggio.
+
 <img src="./image/client/correctSaveFileName.png">
+
+
 
 <h4 id="c17">Opzione menu non valida</h4>
 
+Comportamento nel caso in cui venga inserito un numero, per la selezione dell'azione da eseguire, non presente tra 
+le opzioni del menu.
+
 <img src="./image/client/wrongMenuOption.png">
+
+---
+
+<h2 id="javadoc">JavaDoc</h2>
+
+- [JavaDoc Server](./Server/javadoc/index.html)
+- [JavaDoc Client](./Client/javadoc/index.html)
+
+---
+
+<h2 id="diagramma">Diagramma delle classi</h2>
+
+<h3 id="diagramma-server">Server</h3>
+
+[ <img src="image/serverUML.png"> ](./image/serverUML.png)
+
+<h3 id="diagramma-client">Client</h3>
+
+[ <img src="image/clientUML.png"> ](./image/clientUML.png)

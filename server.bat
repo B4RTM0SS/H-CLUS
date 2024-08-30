@@ -2,10 +2,10 @@
 
 setlocal EnableDelayedExpansion
 
-set /P username=Enter root database username: 
-set /P password=Enter user %username% password: 
+set /P user=Enter root database user:
+set /P password=Enter user %user% password:
 echo | set /p=Connecting to database...
-mysqlsh -u %username% --password=%password% --sql --file=script.sql > NUL 2>&1
+mysqlsh -u %user% --password=%password% --sql --file=script.sql > NUL 2>&1
 
 if errorlevel 1 (
 
