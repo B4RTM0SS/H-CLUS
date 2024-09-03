@@ -205,9 +205,9 @@ Comportamento del programma nel caso in cui vengano inserite delle credenziali d
 
 
 
-Caso in cui un vengano inserite credenziali corrette per l'accesso al servizio mysql.
-
 <h4 id="s2">Nome utente errato</h4>
+
+Caso in cui un vengano inserite credenziali corrette per l'accesso al servizio mysql.
 
 <img src="./image/server/wrongUsername.png">
 
@@ -366,7 +366,7 @@ Comportamento nel caso in cui sia stata inserita una profondità del dendrogramm
 <h4 id="c14">Profondità dendrogramma non valida</h4>
 
 Comportamento nel caso in cui sia stata immessa una profondità del dendrogramma non valida (che eccede il numero di 
-elementi presenti nella tabella del database precedentemente scelta)
+elementi presenti nella tabella del database precedentemente scelta).
 
 <img src="./image/client/invalidDendrogramDepth.png">
 
