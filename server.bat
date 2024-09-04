@@ -42,7 +42,7 @@ if errorlevel 1 (
 			echo JAR created successfully^^!
 
 			echo | set /p=Generating Javadoc...
-			javadoc -d Server/javadoc/ -windowtitle "Laboratorio MAP - Server" -sourcepath Server/src/ Server/src/*.java > NUL 2>&1
+			javadoc -d Server/javadoc/ -windowtitle "Laboratorio MAP - Server" -sourcepath Server/src/ -subpackages clustering data database distance server > NUL 2>&1
 
 			if errorlevel 1 (
 
